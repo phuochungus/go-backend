@@ -1,7 +1,8 @@
 package main
 
-import "fmt"
+import "go-backend/internal/routers"
 
 func main() {
-	fmt.Println("Server is running...")
+	r := routers.NewRouter()
+	r.Run(":8002")
 }
