@@ -12,7 +12,7 @@ func NewRouter() *gin.Engine {
 	v1 := r.Group("/v1")
 	{
 		v1.GET("/ping", c.NewUserController().GetUser)
-		v1.POST("/ping", c.NewUserController().GetUser)
+		v1.GET("/error", c.NewUserController().TestError)
 	}
 
 	return r

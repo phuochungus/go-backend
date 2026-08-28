@@ -2,7 +2,7 @@ package controller
 
 import (
 	"go-backend/internal/service"
-	"net/http"
+	"go-backend/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )
@@ -19,8 +19,10 @@ func NewUserController() *UserController {
 
 func (uc *UserController) GetUser(c *gin.Context) {
 	// Get user ID from the request parameters
-	c.JSON(http.StatusOK,
-		gin.H{
-			"user": uc.service.GetUser(),
-		})
+	response.SuccessResponse(c, 20001, []string{"John Doe", "Jane Smith"})
+}
+
+func (uc *UserController) TestError(c *gin.Context) {
+	// Simulate an error response
+	response.ErrorResponse(c, 20003, "Invalid parameters")
 }
