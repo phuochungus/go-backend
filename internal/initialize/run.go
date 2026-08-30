@@ -3,13 +3,15 @@ package initialize
 import (
 	"fmt"
 	"go-backend/global"
+
+	"go.uber.org/zap"
 )
 
 func Run() {
 	LoadConfig()
-
 	fmt.Println("Loaded config: ", global.Config)
 	InitLogger()
+	global.Logger.Info("Config log ok!!", zap.String("ok", "success"))
 	InitMysql()
 	InitRedis()
 
