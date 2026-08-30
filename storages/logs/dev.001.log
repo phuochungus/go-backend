@@ -3,3 +3,6 @@
 {"level":"INFO","time":"2026-08-30T20:51:13.728+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
 {"level":"INFO","time":"2026-08-30T20:52:18.699+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
 {"level":"INFO","time":"2026-08-30T21:30:08.003+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"INFO","time":"2026-08-30T21:37:21.532+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"INFO","time":"2026-08-30T22:07:01.881+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"ERROR","time":"2026-08-30T22:07:01.882+0700","caller":"initialize/mysql.go:16","msg":"InitMysql initialization error","error":"dial tcp 127.0.0.1:3306: connect: connection refused","stacktrace":"go-backend/internal/initialize.checkErrorPanic\n\t/Users/macbook/Desktop/go-backend/internal/initialize/mysql.go:16\ngo-backend/internal/initialize.InitMysql\n\t/Users/macbook/Desktop/go-backend/internal/initialize/mysql.go:27\ngo-backend/internal/initialize.Run\n\t/Users/macbook/Desktop/go-backend/internal/initialize/run.go:15\nmain.main\n\t/Users/macbook/Desktop/go-backend/cmd/server/main.go:6\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:302"}

@@ -8,7 +8,7 @@ type Config struct {
 type MySQLSetting struct {
 	Host            string `mapstructure:"host"`
 	Port            string `mapstructure:"port"`
-	User            string `mapstructure:"user"`
+	Username        string `mapstructure:"username"`
 	Password        string `mapstructure:"password"`
 	Dbname          string `mapstructure:"dbname"`
 	MaxIdleConns    int    `mapstructure:"maxIdleConns"`
