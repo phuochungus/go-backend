@@ -14,7 +14,7 @@ type LoggerZap struct {
 }
 
 func NewLogger(config setting.LoggerSetting) *LoggerZap {
-	logLevel := config.Level
+	logLevel := config.LogLevel
 	var level zapcore.Level
 	switch logLevel {
 	case "debug":

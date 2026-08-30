@@ -10,7 +10,7 @@ mysql:
   maxOpenConns: 100
   connMaxLifetime: 3600
 logger:
-  level: debug
+  logLevel: debug
   filename: storages/logs/dev.001.log
   maxSize: 500
   maxBackups: 3
