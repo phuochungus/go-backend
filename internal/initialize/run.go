@@ -14,5 +14,6 @@ func Run() {
 	InitRedis()
 
 	r := InitRouter()
+
 	r.Run(":8002")
 }
