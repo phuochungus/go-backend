@@ -1,2 +1,4 @@
 {"level":"INFO","time":"2026-08-30T20:48:30.577+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
 {"level":"INFO","time":"2026-08-30T20:50:01.118+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"INFO","time":"2026-08-30T20:51:13.728+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"INFO","time":"2026-08-30T20:52:18.699+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
