@@ -16,3 +16,9 @@
 {"level":"INFO","time":"2026-08-31T16:06:14.869+0700","caller":"initialize/mysql.go:28","msg":"InitMysql initialization success","db":"root:root1234@tcp(127.0.0.1:3306)/shopdevgo?charset=utf8mb4&parseTime=True"}
 {"level":"INFO","time":"2026-08-31T16:06:14.982+0700","caller":"initialize/mysql.go:51","msg":"migrateTables initialization success"}
 {"level":"INFO","time":"2026-08-31T16:06:14.984+0700","caller":"initialize/redis.go:31","msg":"Redis connection successful"}
+{"level":"INFO","time":"2026-08-31T19:43:15.590+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"ERROR","time":"2026-08-31T19:43:15.602+0700","caller":"initialize/mysql.go:16","msg":"InitMysql initialization error","error":"Error 1045 (28000): Access denied for user 'root'@'192.168.65.1' (using password: YES)","stacktrace":"go-backend/internal/initialize.checkErrorPanic\n\t/Users/macbook/Desktop/go-backend/internal/initialize/mysql.go:16\ngo-backend/internal/initialize.InitMysql\n\t/Users/macbook/Desktop/go-backend/internal/initialize/mysql.go:27\ngo-backend/internal/initialize.Run\n\t/Users/macbook/Desktop/go-backend/internal/initialize/run.go:15\nmain.main\n\t/Users/macbook/Desktop/go-backend/cmd/server/main.go:6\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:302"}
+{"level":"INFO","time":"2026-08-31T19:43:34.714+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"INFO","time":"2026-08-31T19:43:34.725+0700","caller":"initialize/mysql.go:28","msg":"InitMysql initialization success","db":"root:root1234@tcp(127.0.0.1:3306)/shopdevgo?charset=utf8mb4&parseTime=True"}
+{"level":"INFO","time":"2026-08-31T19:43:34.842+0700","caller":"initialize/mysql.go:51","msg":"migrateTables initialization success"}
+{"level":"INFO","time":"2026-08-31T19:43:34.847+0700","caller":"initialize/redis.go:31","msg":"Redis connection successful"}
