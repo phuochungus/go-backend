@@ -26,7 +26,7 @@ func InitMysql() {
 	})
 	checkErrorPanic(err, "InitMysql initialization error")
 	global.Logger.Info("InitMysql initialization success", zap.String("db", s))
-	global.Mdb = db
+	global.DB = db
 
 	SetPool()
 	migrateTables()
@@ -34,7 +34,7 @@ func InitMysql() {
 
 func SetPool() {
 	m := global.Config.Mysql
-	sqlDb, err := global.Mdb.DB()
+	sqlDb, err := global.DB.DB()
 	if err != nil {
 		fmt.Printf("mysql error: %s::", err)
 	}
@@ -44,7 +44,7 @@ func SetPool() {
 }
 
 func migrateTables() {
-	err := global.Mdb.AutoMigrate(&po.User{}, &po.Role{})
+	err := global.DB.AutoMigrate(&po.User{}, &po.Role{})
 	if err != nil {
 		global.Logger.Error("migrateTables initialization error", zap.Error(err))
 	}
