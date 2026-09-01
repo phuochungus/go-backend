@@ -1,12 +1,28 @@
 package repo
 
-type UserRepo struct{}
+import "go-backend/internal/po"
 
-func NewUserRepo() *UserRepo {
-	return &UserRepo{}
+// type UserRepo struct{}
+
+// func NewUserRepo() *UserRepo {
+// 	return &UserRepo{}
+// }
+
+// func (ur *UserRepo) GetUser() string {
+// 	// Get user ID from the request parameters
+// 	return "Get user Hung Nguyen"
+// }
+
+type IUserRepository interface {
+	GetUserByEmail(email string) (*po.User, error)
 }
 
-func (ur *UserRepo) GetUser() string {
-	// Get user ID from the request parameters
-	return "Get user Hung Nguyen"
+type userRepository struct{}
+
+func NewUserRepository() IUserRepository {
+	return &userRepository{}
+}
+
+func (r *userRepository) GetUserByEmail(email string) (*po.User, error) {
+	panic("unimplemented")
 }

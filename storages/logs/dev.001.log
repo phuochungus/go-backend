@@ -22,3 +22,7 @@
 {"level":"INFO","time":"2026-08-31T19:43:34.725+0700","caller":"initialize/mysql.go:28","msg":"InitMysql initialization success","db":"root:root1234@tcp(127.0.0.1:3306)/shopdevgo?charset=utf8mb4&parseTime=True"}
 {"level":"INFO","time":"2026-08-31T19:43:34.842+0700","caller":"initialize/mysql.go:51","msg":"migrateTables initialization success"}
 {"level":"INFO","time":"2026-08-31T19:43:34.847+0700","caller":"initialize/redis.go:31","msg":"Redis connection successful"}
+{"level":"INFO","time":"2026-09-01T14:12:03.971+0700","caller":"initialize/run.go:14","msg":"Config log ok!!","ok":"success"}
+{"level":"INFO","time":"2026-09-01T14:12:03.980+0700","caller":"initialize/mysql.go:28","msg":"InitMysql initialization success","db":"root:root1234@tcp(127.0.0.1:3306)/shopdevgo?charset=utf8mb4&parseTime=True"}
+{"level":"INFO","time":"2026-09-01T14:12:04.112+0700","caller":"initialize/mysql.go:51","msg":"migrateTables initialization success"}
+{"level":"INFO","time":"2026-09-01T14:12:04.115+0700","caller":"initialize/redis.go:31","msg":"Redis connection successful"}
